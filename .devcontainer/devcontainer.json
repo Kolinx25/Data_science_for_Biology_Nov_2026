@@ -33,5 +33,12 @@
     "ANTHROPIC_AUTH_TOKEN": "${containerEnv:OPENROUTER_API_KEY}",
     "OPENROUTER_API_KEY": "${containerEnv:OPENROUTER_API_KEY}"
   },
-  "postCreateCommand": "bash .devcontainer/setup.sh"
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  {
+    "features": {
+      "ghcr.io/devcontainers/features/sshd:1": {
+        "version": "latest"
+      }
+    }
+  }
 }
